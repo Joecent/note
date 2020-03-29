@@ -1,0 +1,9 @@
+手动编译安装：
+
+1、先安装依赖  sudo apt-get install build-essential
+
+2、安装指导  https://www.cnblogs.com/Yatces/p/11388811.html
+
+ubuntu16.04
+
+apt install nginx-light  service nginx start 开启

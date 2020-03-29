@@ -1,0 +1,91 @@
+1、Access denied for user 'root'@'localhost' (using password: YES) 这个错误是密码错误，系统只识别是否输入字符串密码，就返回了YES.
+
+2、 /usr/local/mysql/data/slow.log  mysql慢日志
+     /tmp/mysql.sock mysql socket文件
+
+3、停止mysql服务  service mysqld stop
+     开启mysql服务  service mysqld start
+     杀死mysql进程  killall -TERM mysqld
+
+4、修改文件名  mv file1 file2  把当前目录下的file1文件名改成file2，如果该目录下有file2，则覆盖以前的file2文件
+
+5、重置mysql root 密码 https://www.jianshu.com/p/679c5be98fcd  
+
+6、查看端口状态   netstat -an|grep 3306
+
+7、使用navicat加载sql数据库   右键数据库->运行文件->选择本地数据库->加载完后按F5      
+
+     新建的数据库若需要用navicat连接，1、阿里云设置安全组，开放3306端口。2、服务器修改/etc/iptables/rules.v4 开放3306  iptables-restore < /etc/iptables/rules.v4    iptables -L -n 可查看防火墙端口状态
+
+8、1. 首先利用配置文件启动nginx。
+     命令: nginx -c /usr/local/nginx/conf/nginx.conf
+ 
+     重启服务： service nginx restart
+ 
+    2. 快速停止或关闭Nginx：nginx -s stop
+ 
+    3. 正常停止或关闭Nginx：nginx -s quit
+ 
+    4. 配置文件修改重装载命令：nginx -s reload
+
+9、删除文件  rm +  文件名
+   删除文件夹  rm -rf + 文件夹名
+   复制文件  cp /test1/file1 /test3/file2
+   复制文件夹  cp -r /test1/file1 /test3/file2
+   移动文件  mv /test1/file1 /test3/file2
+
+10、linux 下PHP服务操作
+
+service php-fpm start  开启        /usr/local/php/sbin/php-fpm
+
+service php-fpm stop   停止        kill -INT `cat /usr/local/php/var/run/php-fpm.pid`
+
+service php-fpm restart  重启      kill -USR2 `cat /usr/local/php/var/run/php-fpm.pid`
+
+11、设置nginx与php连接时，fastcgi-pass设置方式很关键，一步一步设置。
+
+12、ubuntu 防火墙开启与关闭  sudo ufw enable/disable   防火墙状态 sudo ufw status
+
+13、ubuntu 重启ssh sudo systemctl restart ssh 
+       
+       其他可能操作  /etc/init.d/ssh restart
+	          sudo service ssh restart
+	         sudo restart ssh
+       来源：https://www.kutu66.com//ubuntu/article_168831
+
+14、ubuntu 网络连接   networking.service    开启网络连接：sudo systemctl start networking   
+       网卡配置查询 ifconfig -a  开启/关闭网卡eth0   ifconfig eth0 up/down
+       没有ip   dhclient eth0  //分配IP    ifconfig eth0 192.168.1.188 netmask 255.255.0  手动分配IP和网关
+      route add default gw 192.168.1.1   添加默认网关
+
+15. zip文件操作
+     	zip all.zip *.jpg   #将所有.jpg的文件压缩成一个zip包
+
+	unzip all.zip    #将all.zip中的所有文件解压到当前目录中
+
+	unzip all.zip -d all #将all.zip 中的所有文件解压到当前目录中的all文件夹中
+
+	zip -r hy.zip hy  #将当前目录下的hy文件夹压缩为hy.zip
+
+	zip -r hy.zip hy 123.txt  #将当前目录下的hy文件夹和123.txt压缩为hy.zip
+	解压：
+	jar vxf **.zip
+ 	tar -zxvf **.tar.gz
+16、创建文件夹  mkdir test     创建文件  touch test.txt
+
+17、运行安装文件  ./install.sh
+
+18、vim 操作   显示行数  :set number    删除所有  :%d
+
+19、设置开启ssh  https://www.cnblogs.com/jiarenanhao/p/9938280.html
+
+    WSL 开启ssh 参考  https://www.liangzl.com/get-article-detail-123433.html
+
+20、ubuntu 18.04安装 mysql 注意事项  https://blog.csdn.net/li761747705/article/details/80409411
+
+21、查询端口占用情况   lsof -i:8000    netstat -tunlp |grep 端口号
+
+
+
+
+      

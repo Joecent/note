@@ -1,0 +1,38 @@
+1、安装完python后需要添加环境变量 ： 鼠标右键我的电脑 -> 属性 -> 点击高级系统设置 -> 点击环境变量 -> 点击系统变量中的PATH -> 在最后面加上我们的Python安装路径 -> 点击确定  
+
+2、安装pip流程：https://pypi.org/project/pip/#files 下载pip安装tar包  解压到某位置后，用cmd进入文件夹，执行 python setup.py install 。安装完也需要添加环境变量：将python安装文件夹中scripts路径添加环境变量。
+
+3、使用python访问mdb数据库，使用pip 安装 pypyodbc ，然后需要在控制面板设置数据源驱动，有效参考  https://blog.csdn.net/victor111222/article/details/94598726
+
+4、 用python tkinter库读取文件位置 并返回绝对地址  https://blog.csdn.net/qq_44239466/article/details/90250938
+
+5、Linux下使用python   安装miniconda : https://www.jianshu.com/p/fab0068a32b4    其中重启配置的操作为  source ~/.bashrc !!
+
+     安装后， 输入python进入python命令行，quit(), exit(), 或者Ctrl-D退出python命令模式。。
+
+6、python 做web服务器设置  https://www.jianshu.com/p/85692a94e99b
+
+7、安装uwsgi  https://www.cnblogs.com/lfxiao/p/9952442.html
+
+8、pip下载太慢时  https://blog.csdn.net/weixin_41004350/article/details/78780527
+   
+   可以用   pip install -i https://pypi.tuna.tsinghua.edu.cn/simple requests   下载requests库   清华包
+   
+            pip install -i http://pypi.douban.com/simple/                                       豆瓣包
+
+9、两个文件间相互调用函数及类   https://blog.csdn.net/winycg/article/details/78512300
+
+10、将pandas.Dataframe转化为字典格式的两种方法  
+
+	da = df.to_dict(orient='records')
+
+	das = df.to_json(orient='records')
+
+11、python 连接Mysql    https://www.jianshu.com/p/1ba64df4fd15   https://zhuanlan.zhihu.com/p/72347359  
+ 		       
+			https://www.jianshu.com/p/238a13995b2b
+
+12、python json 和 对象dict 的转化  https://blog.csdn.net/qq_33689414/article/details/78307018
+
+13、pandas处理 json 数据  https://blog.csdn.net/qq_24499417/article/details/81428594
+     

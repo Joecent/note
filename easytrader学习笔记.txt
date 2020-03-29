@@ -1,0 +1,12 @@
+
+1、easytrader源码：https://github.com/shidenggui/easytrader     
+
+     easyquant源码：https://github.com/shidenggui/easyquant
+
+2、雪球账号： 15367064396   ceshi@2020
+
+3、easy quant需要easy trader，又需要pywinauto，pywinauto可以从github上拉到源码，通过python setup. py install安装，装好这个模块就一切okay了
+
+     pip install easyquotation   logbook  arrow  redis
+
+"cookies":"aliyungf_tc=AQAAAHtSvHOuWgsA/ZGm3wzNc6dmYSyL; acw_tc=2760825415787056887472554e04d4d20459c429e47e90e29d5e01bfa5ec8f; device_id=24700f9f1986800ab4fcc880530dd0ed; Hm_lvt_1db88642e346389874251b5a1eded6e3=1578705693; Hm_lpvt_1db88642e346389874251b5a1eded6e3=1578705693; remember=1; xq_a_token=84e45757d5a97f9c979ec9bb13fda26eec22446f; xqat=84e45757d5a97f9c979ec9bb13fda26eec22446f; xq_r_token=fb2c4052ccc0fae4cc5c3c5c370099025f2c56eb; xq_is_login=1; u=6008752240"

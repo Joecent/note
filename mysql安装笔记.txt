@@ -1,0 +1,12 @@
+ubuntu1804安装mysql    参考笔记：https://blog.csdn.net/li761747705/article/details/80409411
+1、sudo apt-get update 
+
+   sudo apt-get upgrade
+
+   更新apt-get源
+
+2、去官网下载 mysql-apt-config_0.*.****_all.deb   http://dev.mysql.com/downloads/repo/apt/.
+
+   sudo dpkg -i mysql-apt-config_0.*.****_all.deb  安装配置
+
+3、 sudo apt-get install mysql-server   安装Mysql
