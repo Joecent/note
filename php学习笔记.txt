@@ -8,3 +8,5 @@
 
 3、使用LNMP 安装 nginx、mysql、php  https://lnmp.org/download.html
 
+4、
+
