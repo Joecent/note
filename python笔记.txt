@@ -35,4 +35,6 @@
 12、python json 和 对象dict 的转化  https://blog.csdn.net/qq_33689414/article/details/78307018
 
 13、pandas处理 json 数据  https://blog.csdn.net/qq_24499417/article/details/81428594
+
+14、flask处理跨域问题   https://www.cnblogs.com/hanbowen/p/9899088.html
      
